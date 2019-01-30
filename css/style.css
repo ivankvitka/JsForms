@@ -48,3 +48,21 @@
 .registration-form__btn--submit:hover {
     background-color: #006b00;
 }
+
+@media screen and (max-width: 980px) {
+    .registration-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .registration-form__label {
+        flex-wrap: wrap;
+    }
+
+    .registration-form__input-title {
+        flex-basis: 100%;
+    }
+}
+
+

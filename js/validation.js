@@ -15,8 +15,8 @@
     formExpiry: form.querySelectorAll('.js-expiry'),
   };
   createMsg();
-  setDefaultValidation();
   confirm();
+  setDefaultValidation();
 
   form.addEventListener("submit",
     function(event) {
@@ -158,7 +158,6 @@
   function validate(regex, formInput, message) {
     let msg = formInput[0].parentElement.querySelector('.msg');
     if (regex.test(formInput[0].value)) {
-      formInput[0].borderColor = "#00ff00";
       msg.innerText = 'Success';
       msg.style.color = '#00ff00';
       formInput[0].isValide = true;
@@ -166,6 +165,7 @@
       || (!formInput[0].classList.contains('required') && formInput[0].value !== '')) {
       msg.innerText = `Enter valid ${message}`;
       msg.style.color = '#ff0000';
+      formInput[0].isValide = false;
     } else {
       msg.innerText = '';
     }
