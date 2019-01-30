@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<form class="registration-form js-form">
+  <fieldset>
+    <legend>Contact</legend>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Name</span>
+      <input type="text" class="js-user-name field required registration-form__field" placeholder="Name Surname">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title"> Email</span>
+      <input type="email" class="js-email field required registration-form__field" placeholder="example@email.com">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Confirm Email</span>
+      <input type="email" class="js-email field registration-form__field" placeholder="example@email.com">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Phone Number</span>
+      <input type="tel" class="js-phone field required registration-form__field" placeholder="+0-0000-000-00-00">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Shipping</legend>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title"> Address</span>
+      <input type="text" class="js-address field registration-form__field">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">City</span>
+      <input type="text" class="js-city field registration-form__field" placeholder="New York">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">State</span>
+      <input type="text" class="js-state field registration-form__field" placeholder="NY">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Zip</span>
+      <input type="text" class="js-zip field registration-form__field" placeholder="00000">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Country</span>
+      <input type="text" class="js-country field registration-form__field" placeholder="USA">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Payment</legend>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Name on card</span>
+      <input type="text" class="js-name-on-card field registration-form__field" placeholder="Name Surname">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Card Number</span>
+      <input type="tel" class="js-card-number field registration-form__field" placeholder="0000 0000 0000 0000">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">CVC</span>
+      <input type="text" class="js-cvc field registration-form__field" placeholder="000">
+    </label>
+    <label class="registration-form__label">
+      <span class="registration-form__input-title">Expiry</span>
+      <input type="text" class="js-expiry field registration-form__field" placeholder="00-0000">
+    </label>
+  </fieldset>
+  <div class="registration-form__btn-container">
+    <button type="reset" class="registration-form__btn">RESET</button>
+    <button type="submit" class="registration-form__btn registration-form__btn--submit">SUBMIT</button></div>
+</form>
+<script src="js/validation.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
