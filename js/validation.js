@@ -111,7 +111,7 @@
   }
 
   function validateAddress() {
-    let regex = /^([A-ZА-Я][a-zа-я]{3,15}\s){1,3}[a-zа-я]{2,10}\.?[\s.,]\s?\d{1,3}$/;
+    let regex = /^([A-ZА-Я][a-zа-я]{3,15}\s){1,3}[a-zа-я]{0,10}\.?[.,]?\s?\d{1,3}$/;
     validate(regex, formObj.formAddress, 'address');
   }
 
