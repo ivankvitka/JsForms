@@ -1,28 +1,17 @@
 class User {
-  constructor(name,
-              email,
-              phone,
-              address,
-              city,
-              state,
-              zip,
-              country,
-              nameOnCard,
-              cardNumber,
-              cvc,
-              expiry) {
-    this._name = name;
-    this._email = email;
-    this._phone = phone;
-    this._address = address;
-    this._city = city;
-    this._state = state;
-    this._zip = zip;
-    this._country = country;
-    this._nameOnCard = nameOnCard;
-    this._cardNumber = cardNumber;
-    this._cvc = cvc;
-    this._expiry = expiry;
+  constructor(userData) {
+    this._name = userData.name;
+    this._email = userData.email;
+    this._phone = userData.phone;
+    this._address = userData.address;
+    this._city = userData.city;
+    this._state = userData.state;
+    this._zip = userData.zip;
+    this._country = userData.country;
+    this._nameOnCard = userData.nameOnCard;
+    this._cardNumber = userData.cardNumber;
+    this._cvc = userData.cvc;
+    this._expiry = userData.expiry;
   }
 }
 
@@ -49,19 +38,19 @@ form.addEventListener('formIsInvalid', function() {
 });
 
 function saveUser() {
-  let user = new User(
-    formName.value,
-    formEmail.value,
-    formPhone.value,
-    formAddress.value,
-    formCity.value,
-    formState.value,
-    formZip.value,
-    formCountry.value,
-    formCardNumber.value,
-    formNameOnCard.value,
-    formCVC.value,
-    formExpiry.value
+  let user = new User({
+    name: formName.value,
+    email: formEmail.value,
+    phone: formPhone.value,
+    address: formAddress.value,
+    city: formCity.value,
+    state: formState.value,
+    zip: formZip.value,
+    country: formCountry.value,
+    cardNumber: formCardNumber.value,
+    nameOnCard: formNameOnCard.value,
+    cvc: formCVC.value,
+    expiry: formExpiry.value}
   );
   console.log(user);
 }
