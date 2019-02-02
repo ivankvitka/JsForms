@@ -51,7 +51,7 @@
       formsArr[i].formEmail[0].addEventListener('keyup', () => validateEmail(formsArr[i]));
     }
     if (formsArr[i].formPhone[0]) {
-      formsArr[i].formPhone[0].addEventListener('keyup', () => validatePhoneNumber(formsArr[i])(formsArr[i]));
+      formsArr[i].formPhone[0].addEventListener('keyup', () => validatePhoneNumber(formsArr[i]));
     }
     if (formsArr[i].formAddress[0]) {
       formsArr[i].formAddress[0].addEventListener('keyup', () => validateAddress(formsArr[i]));
