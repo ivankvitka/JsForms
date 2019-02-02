@@ -75,10 +75,10 @@
       formsArr[i].formCardNumber[0].addEventListener('keyup', () => validateCardNumber(formsArr[i]));
     }
     if (formsArr[i].formCVC[0]) {
-      formsArr[i].formCVC[0].addEventListener('keyup', () => validateCVC);
+      formsArr[i].formCVC[0].addEventListener('keyup', () => validateCVC(formsArr[i]));
     }
     if (formsArr[i].formExpiry[0]) {
-      formsArr[i].formExpiry[0].addEventListener('keyup', () => validateExpiry);
+      formsArr[i].formExpiry[0].addEventListener('keyup', () => validateExpiry(formsArr[i]));
     }
   }
 
